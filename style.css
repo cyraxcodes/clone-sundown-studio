@@ -31,12 +31,12 @@ html, body {
     padding: 2vw 0;
 }
 
-.navbar {
+.nav-buttons {
     display: flex;
     gap: 25px;
 }
 
-.navbar h4 {
+.nav-buttons h4 {
     /* font-size: 1.2rem; */
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -45,7 +45,7 @@ html, body {
     overflow: hidden;
 }
 
-.navbar h4 a {
+.nav-buttons h4 a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.801);
     font-weight: 700;
@@ -54,7 +54,7 @@ html, body {
     transition: all ease 0.5s;
 }
 
-.navbar h4::after {
+.nav-buttons h4::after {
     content: "";
     position: absolute;
     height: 100%;
@@ -66,12 +66,12 @@ html, body {
     transition: all ease 0.5s;
 }
 
-.navbar h4:hover::after {
+.nav-buttons h4:hover::after {
     bottom: 0%;
     border-radius: 0%;
 }
 
-.navbar h4:hover a {
+.nav-buttons h4:hover a {
     color: white;
 }
 
@@ -172,4 +172,52 @@ html, body {
     to{
         transform: translate(0%, -10%);
     }     
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 7vw 0;
+    background-color: #EFEAE3;
+}
+
+.moving-text{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.circle {
+    height: 3vw;
+    width: 3vw;
+    margin: 1vw 2vw;
+    background-color: #FE390F;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.moving-text h1 {
+    font-size: 8vw;
+    display: inline-block;
+}
+
+.text {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: scroll-loop;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll-loop {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%)
+    }
 }
