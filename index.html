@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SundownStudio</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- stylesheet for locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- wrapper -->
     <div class="main">
 
         <div class="page1">
@@ -32,10 +36,17 @@
                     </h1>
                 </div>
             </div>
-            <video autoplay loop muted src="https://sundown-ivory.vercel.app/video.mp4"></video>
+            <!-- shapes wrapper -->
+            <div class="hero-shape">
+                <div class="hero-1"></div>
+                <div class="hero-2"></div>
+                <div class="hero-3"></div>
+            </div>
+            <video autoplay loop muted src="./video.mp4"></video>
         </div>
     </div>
-
+    <!-- cdn for locomotive-scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="script.js"></script>
 
 </body>
