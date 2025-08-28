@@ -82,7 +82,7 @@ html, body {
     /* padding: 0 2vw; */
     height: 79vh;
     width: 100%;
-    background-color: red;
+    /* background-color: red; */
     border-bottom: 1px solid black;
     padding-bottom: 5vw;
 }
@@ -100,7 +100,76 @@ html, body {
 }
 
 .page1 video {
+    position: relative;
     width: 100%;
     margin-top: 3vw;
     border-radius: 30px;
+}
+
+/* will work as a wrapper for our design */
+.hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+    top: 80vh;
+    right: 0;
+}
+
+.hero-1 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FE390F;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+}
+
+.hero-2 {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE390F, #fe5b0f);
+    /* background-color: #FE390F; */
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: animation-2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+.hero-3 {
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE390F, #fe5b0f);
+    /* background-color: #FE390F; */
+    border-radius: 50%;
+    filter: blur(25px);
+    animation-name: animation-1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes animation-1 {
+    from{
+        transform: translate(0%, 10%);
+    }
+    
+    to{
+        transform: translate(50%, -10%);
+    }     
+}
+@keyframes animation-2 {
+    from{
+        transform: translate(40%, 10%);
+    }
+    
+    to{
+        transform: translate(0%, -10%);
+    }     
 }
