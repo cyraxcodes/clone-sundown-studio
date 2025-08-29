@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SundownStudio</title>
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
     <!-- stylesheet for locomotive-scroll -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- wrapper -->
+    <!-- element overlay div -->
+    <div class="fixed-element-image" id="fixed-element-image"></div>
+    <!-- wrapper to apply locomotive smooth scrolling -->
     <div class="main">
 
         <div class="page1">
             <nav class="nav">
                 <div class="brand-logo">
-                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="brand-logo">
+                    <img src="./images/brand-logo.svg" alt="brand-logo">
                 </div>
                 <div class="nav-buttons">
                     <h4><a href="#">Work</a></h4>
@@ -42,7 +46,7 @@
                 <div class="hero-2"></div>
                 <div class="hero-3"></div>
             </div>
-            <video autoplay loop muted src="./video.mp4"></video>
+            <video autoplay loop muted src="./images/video.mp4"></video>
         </div>
         <div class="page2">
             <div class="moving-text">
@@ -71,10 +75,71 @@
                     <div class="circle"></div>
                 </div>
             </div>
+            <div class="content">
+                <div class="left-section">
+                    <h1>We are a group of design-driven, goal-focused creators, producers, and designers who believe that the details make all the difference.</h1>
+                </div>
+                <div class="right-section">
+                    <img src="./images/page-2-photo.jpg" alt="page-2-photo">
+                    <p>We love to create, we love to solve, we love to collaborate, and we love to turn amazing ideas into reality. We’re here to partner with you through every step of the process and know that relationships are the most important things we build.</p>
+                </div>
+                <div class="bg-circle">
+                </div>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="page3-heading">
+                <div class="bullet"></div>
+                <h1>FEATURED PROJECTS</h1>
+            </div>
+            <div class="row-content" id="row-content">
+                <div class="element" data-img="./images/element-1.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>Play New Kidivision</h2>
+                </div>
+                <div class="element" data-img="./images/element-2.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>SOHO NYC</h2>
+                </div>
+                <div class="element" data-img="./images/element-3.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>Makers Studio</h2>
+                </div>
+                <div class="element" data-img="./images/element-4.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>SOHO 2023</h2>
+                </div>
+                <div class="element" data-img="./images/element-5.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>NYFW Popup</h2>
+                </div>
+                <div class="element" data-img="./images/element-6.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>Air Force 1 2021</h2>
+                </div>
+                <div class="element" data-img="./images/element-7.jpg">
+                    <div class="element-overlay"></div>
+                    <h2>50th Anniversary</h2>
+                </div>
+            </div>
+            <button>All Projects -></button>
+        </div>
+        <div class="page4">
+
         </div>
     </div>
+    <footer>
+        <h1>Sundown</h1>
+    </footer>
+
     <!-- cdn for locomotive-scroll -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    
+    <!-- cdn for gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- local js script -->
     <script src="script.js"></script>
 
 </body>
