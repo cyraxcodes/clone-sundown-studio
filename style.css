@@ -402,11 +402,66 @@ footer {
     height: 100vh;
     width: 100%;
     background-color: black;
-    color: white;
+    color: #EFEAE3;
     z-index: 9;
     bottom: 0;
 }
 
-footer h1 {
-    font-size: 24vw;
+footer .upper-section {
+    height: 50vh;
+    padding: 6vw 6vw;
+    display: flex;
+    justify-content: space-between;
+}
+footer .upper-section h2 {
+    font-size: 2vw;
+}
+footer .upper-section .footer-mail {
+    width: 30%;
+}
+footer .upper-section .footer-mail p {
+    width: 70%;
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+
+#footer-mail::placeholder {
+    background-color: transparent;
+    color: #DAB5A5;
+    font-size: 1vw;
+    /* padding: 5vw 5vw; */
+    width: 100%;
+}
+
+.footer-mail input{
+    background-color: transparent;
+    margin-top: 1.5vw;
+    padding: 1vw;
+    width: 100%;
+    /* box-shadow: none; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #D9B9AA);
+}
+
+footer .lower-section {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding: 1vw 2vw;
+}
+
+footer .lower-section .brand h1 {
+    font-size: 23vw;
+    line-height: 19vw;
+    margin-bottom: 1.5vw;
+    text-align: center;
+    border-bottom: 1px solid #EFEAE3;
+    /* display: inline-block; */
+}
+
+footer .lower-section .footer-socials {
+    display: flex;
+    justify-content: space-between;
 }
