@@ -394,17 +394,19 @@ html, body {
 .page4 {
     height: 100vh;
     width: 100%;
+    background-color: transparent;
 }
 
 
 footer {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     width: 100%;
     background-color: black;
     color: #EFEAE3;
     z-index: 9;
     bottom: 0;
+    overflow: hidden;
 }
 
 footer .upper-section {
@@ -442,7 +444,7 @@ footer .upper-section .footer-mail p {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #D9B9AA);
+    border-bottom: 1px solid #D9B9AA;
 }
 
 footer .lower-section {
@@ -457,7 +459,7 @@ footer .lower-section .brand h1 {
     line-height: 19vw;
     margin-bottom: 1.5vw;
     text-align: center;
-    border-bottom: 1px solid #EFEAE3;
+    border-bottom: 1px solid grey;
     /* display: inline-block; */
 }
 
@@ -465,3 +467,44 @@ footer .lower-section .footer-socials {
     display: flex;
     justify-content: space-between;
 }
+footer .bg-shape-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    width: 100vw;
+    background-color: #fe3b0fd5;
+    filter: blur(25px);
+    z-index: 1;
+    /* animation-name: footer-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+}
+
+/* footer .bg-shape-2 {
+    position: absolute;
+    top: -50%;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    filter: blur(20px);
+    background-color: red;
+    z-index: 1;
+} */
+footer .upper-section {
+    position: relative;
+    z-index: 2;
+}
+footer .lower-section {
+    position: relative;
+    z-index: 2;
+}
+
+/* @keyframes footer-animation {
+    from{
+        transform: rotate(-12deg);
+    }
+    to {
+        transform: rotate(-18deg);
+    }
+} */
